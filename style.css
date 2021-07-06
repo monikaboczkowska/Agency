@@ -1,0 +1,347 @@
+body {
+    font-family: 'Unkempt';
+    background-color: #f5f3f5;
+    padding: 0;
+    margin: 0;
+}
+
+/* ######################  NAV SECTION  ################################## */
+
+.navbar {
+    border-top: 0.6rem solid #06D6A0;
+    background-color: #26547C;
+    padding: 0;
+    margin: 0!important;
+}
+.agency-logo-text {
+    color: #f5f5f5;
+    font-family: Ink Free;
+    font-weight: bold;
+}
+.nav-link {
+    color: #FCFCFC;
+    font-size: 1.2rem;
+    transition: all 1s ease;
+}
+.nav-link:hover {
+    color: #26547C;
+    font-weight: bold;
+    background: #06D6A0;
+    border-radius: 0.5rem;
+}
+.navbar-toggler {
+    color: #06D6A0;
+    font-size: 1.6rem;
+    transition: all 1s ease!important;
+}
+.navbar-toggler:hover {
+    color: #f5f5f5!important;
+}
+
+/* ######################  BANNER SECTION  ################################## */
+
+.viewport-80 {
+    min-height: 80vh;
+}
+#banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://cdn.pixabay.com/photo/2017/08/02/00/49/people-2569234_1280.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#banner .banner-link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 15px 25px;
+    border: 0.2rem solid #f5f5f5;
+    border-radius: 0;
+    color: #f5f5f5;
+    transition: all 1s ease;
+}
+#banner .banner-link:hover {
+    color: #06D6A0;
+    font-weight: bold;
+    border: 0.2rem solid #06D6A0;
+}
+#banner::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #26547C;
+    z-index: -1;
+    bottom: -5px;
+    transform-origin: left bottom;
+    transform: skewY(5deg);
+}
+#banner-icons {
+    margin-top: -40px;
+}
+#banner-icons ul {
+    list-style-type: none;
+}
+#banner-icons li {
+    padding: 15px;
+    margin: 0 10px;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+#banner-icons .fas {
+    color: #f5f5f5 !important;
+    font-size: 3rem;
+}
+#banner-icons .fas:hover {
+    color: #06D6A0!important;
+}
+#banner-icons a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+}
+#banner-icons a:hover {
+    color: #06D6A0;
+}
+
+/* ######################  SERVICES SECTION  ################################## */
+
+.title i {
+    font-size: 3.5rem;
+    color: #06D6A0;
+}
+.title .title-text {
+    color: #26547C;
+    border-left: 0.3rem solid #26547C;
+}
+#services .service-icon {
+    font-size: 4rem;
+    background-color: #26547C;
+    color: #f5f5f5;
+    padding: 5rem;
+    transition: all 1s ease;
+}
+#services .service-icon:hover {
+    background-color: #06D6A0;
+    color: #26547C;
+}
+#services .service-icon-1 {
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+#services .service-icon-2 {
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+#services .service-icon-3 {
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+}
+#services .service-icon-4 {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    .nav-item a {
+        padding-left: 1rem!important;
+    }
+}
+
+/* ######################  SUBSCRIBE SECTION  ################################## */
+
+#subscribe {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://cdn.pixabay.com/photo/2018/03/10/12/00/paper-3213924_1280.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    bottom: -5px;
+    transform-origin: 10% 20%;
+    transform: skewY(-2deg);
+}
+.email-subscribe {
+    background-color: transparent;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+    border-bottom: 0.2rem solid #f5f5f5;
+}
+.email-subscribe::placeholder {
+    font-size: 1.8rem;
+    color: #f5f5f5;
+}
+.btn-subscribe {
+    background-color: transparent;
+    border: 0.1rem solid #f5f5f5;
+    padding: 0.5rem;
+    color: #f5f5f5;
+    font-size: 2rem;
+}
+.btn-subscribe:hover {
+    background-color: #06D6A0;
+    color: #26547C;
+    font-weight: bold;
+}
+
+/* ######################  ABOUT US SECTION  ################################## */
+
+.fa-hand-point-down {
+    color: #f5f5f5 !important;
+    font-size: 2rem;
+}
+#about .card-header {
+    background-color: #06D6A0;
+}
+.btn-link {
+    font-size: 1.5rem;
+    text-decoration: none!important;
+}
+
+/* ######################  CURRENT PROJECTS SECTION  ################################## */
+
+#current-projects {
+    background-color: aliceblue;
+}
+#current-projects .img-container {
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+#current-projects .img-container:hover img {
+    opacity: 0.5;
+}
+#current-projects .img-icons {
+    position: absolute;
+    bottom: -10em;
+    padding: 40px 0;
+    width: 100%;
+    background: linear-gradient(rgba(6, 214, 160, 0.7), rgba(6, 214, 160, 0.7));
+    transition: bottom 1.8s;
+}
+#current-projects .img-container:hover .img-icons {
+    bottom: 0;
+}
+#current-projects .fab {
+    font-size: 1.8rem;
+    color: #f5f5f5;
+}
+#current-projects .fab:hover {
+    color: #26547C;
+}
+.no-padding {
+    padding: 0;
+}
+
+/* ######################  NUMBERS SECTION  ################################## */
+
+#numbers .fas {
+    font-size: 3rem;
+    padding: 0.5rem;
+}
+.col-numbers:hover {
+    background-color: dimgray !important;
+}
+
+/* ######################  TEAM SECTION  ################################## */
+
+#team .card hr {
+    background-color: #06D6A0 !important;
+}
+#team .card img {
+    border-radius: 50%;
+    margin-top: -40px;
+    margin-left: 25%;
+}
+#team .card-footer {
+    font-size: 1.5rem;
+}
+#team .card-footer i {
+    color: #26547C !important;
+    transition: all 1s ease;
+}
+#team .card-footer i:hover {
+    color: #06D6A0 !important;
+    font-size: 1.7rem;
+}
+
+/* ######################  PROGRESS SECTION  ################################## */
+
+#progress {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center/cover fixed no-repeat;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+}
+.progress-bar {
+    background-color: #06D6A0 !important;
+}
+
+/* ######################  PRICES SECTION  ################################## */
+
+#prices .price-num {
+    background-color: #26547C !important;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 67% 76%, 52% 99%, 35% 75%, 0% 75%);
+    color: #f5f5f5;
+    height: 10rem;
+}
+#prices .price {
+    font-size: 3rem;
+    padding-top: 2rem;
+}
+#prices .list-group-item {
+    position: relative;
+    font-size: 1.2rem;
+}
+#prices .first-list {
+    border-top: none!important;
+}
+#prices .card-link {
+    border: 0.1rem solid #26547C;
+    padding: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: #26547C;
+}
+#prices .card-link:hover {
+    color: #f5f5f5;
+    background-color: #26547C;
+}
+
+/* ######################  QUOTES SECTION  ################################## */
+
+#quotes {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_1280.jpg) center/cover fixed no-repeat;
+}
+#quotes .img-quotes {
+    border-radius: 50%;
+    margin-bottom: 150px;
+}
+.blockquote {
+    margin-bottom: 20px;
+}
+.fa-quote-right {
+    color: #06D6A0 !important;
+}
+
+/* ######################  FOOTER SECTION  ################################## */
+
+.icon-footer {
+    background-color: #06D6A0 !important;
+    color: #26547C;
+    margin-right: 10px;
+}
+.icon-footer i {
+    font-size: 2rem;
+}
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 50%;
+    position: relative;
+    height: 0;
+}
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
